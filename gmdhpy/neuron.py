@@ -343,6 +343,10 @@ class PolynomNeuron(Neuron):
     def _fit_regressor(self, x, y, params):
         a = self.get_polynom_inputs(self.ftype, self.u1_index, self.u2_index, x)
         reg = linear_model.Ridge(alpha=params['l2'], solver='lsqr')
+        
+        # reg = linear_model.
+
+
         a2 = a[:, 1:]
         reg.fit(a2, y)
         w = np.empty((len(reg.coef_) + 1,), dtype=np.double)
