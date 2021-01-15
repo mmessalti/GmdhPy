@@ -25,6 +25,13 @@ import time
 import math
 import matplotlib.pyplot as plt
 
+"""
+# VS Code
+from neuron import RefFunctionType, CriterionType
+from neuron import Layer, LayerCreationError
+from data_preprocessing import train_preprocessing, predict_preprocessing, split_dataset, SequenceTypeSet
+from neuron import fit_layer, FitLayerData
+"""
 from gmdhpy.neuron import RefFunctionType, CriterionType
 from gmdhpy.neuron import Layer, LayerCreationError
 from gmdhpy.data_preprocessing import train_preprocessing, predict_preprocessing, split_dataset, SequenceTypeSet
