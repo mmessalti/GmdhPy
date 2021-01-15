@@ -141,6 +141,7 @@ class BaseSONNParam(object):
     l2 - regularization value used in neuron fit by Ridge regression (see sklearn linear_neuron.Ridge)
         default value is 0.5
 
+    l2_bis - a set of regularization values used in neuron fit by Ridge regression (see sklearn linear_neuron.Ridge)
     n_jobs - number of parallel processes(threads) to train model, default 1. Use 'max' to train using
         all available threads.
 
