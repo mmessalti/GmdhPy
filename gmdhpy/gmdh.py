@@ -142,6 +142,8 @@ class BaseSONNParam(object):
         default value is 0.5
 
     l2_bis - a set of regularization values used in neuron fit by Ridge regression (see sklearn linear_neuron.Ridge)
+        default value is (0.01, 0.1, 1)
+
     n_jobs - number of parallel processes(threads) to train model, default 1. Use 'max' to train using
         all available threads.
 
@@ -160,6 +162,7 @@ class BaseSONNParam(object):
         self.normalize = True
         self.layer_err_criterion = 'top'
         self.l2 = 0.5
+        self.l2_bis = (0.01, 0.1, 1)
         self.n_jobs = 1
         self.keep_partial_neurons = False
 
@@ -171,7 +174,7 @@ class BaseSONN(object):
 
     def __init__(self, seq_type, ref_functions, criterion_type, feature_names, max_layer_count,
                  admix_features, manual_best_neurons_selection, min_best_neurons_count, max_best_neurons_count,
-                 criterion_minimum_width, stop_train_epsilon_condition, normalize, layer_err_criterion, l2,
+                 criterion_minimum_width, stop_train_epsilon_condition, normalize, layer_err_criterion, l2, l2_bis,
                  verbose, keep_partial_neurons, n_jobs):
         self.param = BaseSONNParam()                  # parameters
         self.param.seq_type = SequenceTypeSet.get(seq_type)
@@ -200,6 +203,7 @@ class BaseSONN(object):
         self.param.normalize = normalize
         self.param.layer_err_criterion = layer_err_criterion
         self.param.l2 = l2
+        self.param.l2_bis = l2_bis
         self.keep_partial_neurons = keep_partial_neurons
         self.verbose = verbose # verbose: 0 for no logging to stdout, 1 for logging progress
         self.scaler = None
@@ -376,6 +380,7 @@ class BaseSONN(object):
         layer = self._new_layer_with_all_neurons()
 
         fit_params = {'l2': self.param.l2,
+                      'l2_bis': self.param.l2_bis,
                       'layer_index': layer.layer_index,
                       'criterion_type': self.param.criterion_type}
 
@@ -511,7 +516,7 @@ class BaseSONN(object):
             t1 = time.time()
             total_time = (t1 - t0)
             if self.verbose == 1:
-                print("train layer{lnum} in {time:0.2f} sec".format(lnum=layer.layer_index,
+                print("train layer {lnum} in {time:0.2f} sec".format(lnum=layer.layer_index,
                                                                     time=total_time))
 
             # proceed until stop condition is fulfilled
@@ -849,13 +854,13 @@ class Regressor(BaseSONN):
                  criterion_type=CriterionType.cmpValidate, feature_names=None, max_layer_count=50,
                  admix_features=True, manual_best_neurons_selection=False, min_best_neurons_count=5,
                  max_best_neurons_count=10000000, criterion_minimum_width=5,
-                 stop_train_epsilon_condition=0.001, normalize=True, layer_err_criterion='top', l2=0.5,
+                 stop_train_epsilon_condition=0.001, normalize=True, layer_err_criterion='top', l2=0.5, l2_bis=(0.01,0.1,1), 
                  verbose=1, keep_partial_neurons=False, n_jobs=1):
         super(self.__class__, self).__init__(seq_type,
                  ref_functions,
                  criterion_type, feature_names, max_layer_count,
                  admix_features, manual_best_neurons_selection, min_best_neurons_count, max_best_neurons_count,
-                 criterion_minimum_width, stop_train_epsilon_condition, normalize, layer_err_criterion, l2,
+                 criterion_minimum_width, stop_train_epsilon_condition, normalize, layer_err_criterion, l2, l2_bis,
                  verbose, keep_partial_neurons, n_jobs)
         self.loss = 'mse'
 
@@ -896,13 +901,13 @@ class Classifier(BaseSONN):
                  criterion_type=CriterionType.cmpValidate, feature_names=None, max_layer_count=50,
                  admix_features=True, manual_best_neurons_selection=False, min_best_neurons_count=5,
                  max_best_neurons_count=10000000, criterion_minimum_width=5,
-                 stop_train_epsilon_condition=0.001, normalize=True, layer_err_criterion='top', l2=0.5,
+                 stop_train_epsilon_condition=0.001, normalize=True, layer_err_criterion='top', l2=0.5, l2_bis=(0.01,0.1,1),
                  verbose=1, keep_partial_neurons=False, n_jobs=1):
         super(self.__class__, self).__init__(seq_type,
                  ref_functions,
                  criterion_type, feature_names, max_layer_count,
                  admix_features, manual_best_neurons_selection, min_best_neurons_count, max_best_neurons_count,
-                 criterion_minimum_width, stop_train_epsilon_condition, normalize, layer_err_criterion, l2,
+                 criterion_minimum_width, stop_train_epsilon_condition, normalize, layer_err_criterion, l2, l2_bis,
                  verbose, keep_partial_neurons, n_jobs)
         self.loss = 'logloss'
         self.le = LabelEncoder()
