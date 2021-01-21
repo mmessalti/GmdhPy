@@ -783,8 +783,8 @@ class BaseSONN(object):
             'Unselected features by name: {0}'.format(self.get_unselected_features()),
         ]
         for layer in self.layers:
-            s.append('\n' + layer.describe(self.feature_names, self.layers))
-        return '\n'.join(s)
+            s.append(' \n ' + layer.describe(self.feature_names, self.layers))
+        return ' \n '.join(s)
 
     def describe_layer(self, layer_index):
         """Describe the layer

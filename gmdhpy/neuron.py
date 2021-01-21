@@ -303,7 +303,7 @@ class PolynomNeuron(Neuron):
             '; '.join(['w{0}={1}'.format(n, self.w[n]) for n in range(self.w.shape[0])]),
             '||w||^2={ww}'.format(ww=self.w.mean())
         ]
-        return '\n'.join(s)
+        return ' \n '.join(s)
 
 
     def get_polynom_inputs(self, ftype, u1_index, u2_index, source):
@@ -424,7 +424,7 @@ class Layer(list):
         ]
         for neuron in self:
             s.append(neuron.describe(features, layers))
-        return '\n'.join(s)
+        return ' \n '.join(s)
 
     def add(self, neuron):
         neuron.neuron_index = len(self)
