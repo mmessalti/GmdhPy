@@ -94,7 +94,7 @@ class Neuron(object):
     """Base class for neuron
     """
 
-    def __init__(self, layer_index, u1_index, u2_index, neuron_index):
+    def __init__(self, layer_index, u1_index, u2_index, neuron_index, l2=0.5):
         self.layer_index = layer_index
         self.neuron_index = neuron_index
         self.u1_index = u1_index
@@ -105,6 +105,7 @@ class Neuron(object):
         self.validate_err = sys.float_info.max	        # neuron error on validate data set
         self.bias_err = sys.float_info.max	            # bias neuron error
         self.transfer = None                            # transfer function
+        self.l2 = l2
 
     def need_bias_stuff(self, criterion_type):
         if criterion_type == CriterionType.cmpValidate:
@@ -167,8 +168,8 @@ class PolynomNeuron(Neuron):
     """Polynomial neuron class
     """
 
-    def __init__(self, layer_index, u1_index, u2_index, ftype, neuron_index, model_class, loss):
-        super(PolynomNeuron, self).__init__(layer_index, u1_index, u2_index, neuron_index)
+    def __init__(self, layer_index, u1_index, u2_index, ftype, neuron_index, model_class, loss, l2=0.5):
+        super(PolynomNeuron, self).__init__(layer_index, u1_index, u2_index, neuron_index, l2=l2)
         self.ftype = ftype
         self.fw_size = 0
         self.set_type(ftype)
@@ -179,6 +180,7 @@ class PolynomNeuron(Neuron):
         self.train_err = 0
         self.validate_err = 0
         self.model_class = model_class
+        
 
         if model_class=='classification':
             self.fit_function = self._fit_classifier
@@ -301,7 +303,8 @@ class PolynomNeuron(Neuron):
             'validate error: {0}'.format(self.validate_err),
             'bias error: {0}'.format(self.bias_err),
             '; '.join(['w{0}={1}'.format(n, self.w[n]) for n in range(self.w.shape[0])]),
-            '||w||^2={ww}'.format(ww=self.w.mean())
+            '||w||^2={ww}'.format(ww=self.w.mean()),
+            'l2 (regularization value): {0}'.format(self.l2)
         ]
         return ' \n '.join(s)
 
@@ -343,8 +346,9 @@ class PolynomNeuron(Neuron):
     def _fit_regressor(self, x, y, params):
         a = self.get_polynom_inputs(self.ftype, self.u1_index, self.u2_index, x)
         reg = linear_model.Ridge(alpha=params['l2'], solver='lsqr')
-        
+        self.l2 = params['l2']
         # reg = linear_model.
+        #update self.l2
 
 
         a2 = a[:, 1:]

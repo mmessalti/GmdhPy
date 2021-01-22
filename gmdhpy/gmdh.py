@@ -764,10 +764,10 @@ class BaseSONN(object):
         """
         return self._get_features_names_by_index(self.get_selected_features_indices())
 
-    def describe(self):
+    def describe(self, model_name='Model'):
         """Describe the model"""
         s = ['*' * 50,
-             'Model',
+             'Model : '+model_name,
              '*' * 50,
             'Number of layers: {0}'.format(len(self.layers)),
             'Max possible number of layers: {0}'.format(self.param.max_layer_count),
