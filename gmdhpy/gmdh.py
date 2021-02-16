@@ -141,8 +141,8 @@ class BaseSONNParam(object):
     l2 - regularization value used in neuron fit by Ridge regression (see sklearn linear_neuron.Ridge)
         default value is 0.5
 
-    l2_bis - a set of regularization values used in neuron fit by Ridge regression (see sklearn linear_neuron.Ridge)
-        default value is (0.01, 0.1, 1)
+    l2_bis - a set of regularization values used in neuron fit by Ridge regression (see sklearn linear_neuron.RidgeCV)
+        default value is (0.01, 0.1, 1.0)
 
     n_jobs - number of parallel processes(threads) to train model, default 1. Use 'max' to train using
         all available threads.
@@ -162,7 +162,7 @@ class BaseSONNParam(object):
         self.normalize = True
         self.layer_err_criterion = 'top'
         self.l2 = 0.5
-        self.l2_bis = (0.01, 0.1, 1)
+        self.l2_bis = (0.01, 0.1, 1.0)
         self.n_jobs = 1
         self.keep_partial_neurons = False
 
@@ -854,7 +854,7 @@ class Regressor(BaseSONN):
                  criterion_type=CriterionType.cmpValidate, feature_names=None, max_layer_count=50,
                  admix_features=True, manual_best_neurons_selection=False, min_best_neurons_count=5,
                  max_best_neurons_count=10000000, criterion_minimum_width=5,
-                 stop_train_epsilon_condition=0.001, normalize=True, layer_err_criterion='top', l2=0.5, l2_bis=(0.01,0.1,1), 
+                 stop_train_epsilon_condition=0.001, normalize=True, layer_err_criterion='top', l2=0.5, l2_bis=(0.01,0.1,1.0), 
                  verbose=1, keep_partial_neurons=False, n_jobs=1):
         super(self.__class__, self).__init__(seq_type,
                  ref_functions,
@@ -901,7 +901,7 @@ class Classifier(BaseSONN):
                  criterion_type=CriterionType.cmpValidate, feature_names=None, max_layer_count=50,
                  admix_features=True, manual_best_neurons_selection=False, min_best_neurons_count=5,
                  max_best_neurons_count=10000000, criterion_minimum_width=5,
-                 stop_train_epsilon_condition=0.001, normalize=True, layer_err_criterion='top', l2=0.5, l2_bis=(0.01,0.1,1),
+                 stop_train_epsilon_condition=0.001, normalize=True, layer_err_criterion='top', l2=0.5, l2_bis=(0.01,0.1,1.0),
                  verbose=1, keep_partial_neurons=False, n_jobs=1):
         super(self.__class__, self).__init__(seq_type,
                  ref_functions,

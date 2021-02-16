@@ -94,7 +94,7 @@ class Neuron(object):
     """Base class for neuron
     """
 
-    def __init__(self, layer_index, u1_index, u2_index, neuron_index, l2=0.5):
+    def __init__(self, layer_index, u1_index, u2_index, neuron_index, l2=0.5, l2_bis=(0.01, 0.1, 1.0) ):
         self.layer_index = layer_index
         self.neuron_index = neuron_index
         self.u1_index = u1_index
@@ -106,7 +106,8 @@ class Neuron(object):
         self.bias_err = sys.float_info.max	            # bias neuron error
         self.transfer = None                            # transfer function
         self.l2 = l2
-
+        self.l2_bis = l2_bis
+        
     def need_bias_stuff(self, criterion_type):
         if criterion_type == CriterionType.cmpValidate:
             return False
@@ -168,8 +169,8 @@ class PolynomNeuron(Neuron):
     """Polynomial neuron class
     """
 
-    def __init__(self, layer_index, u1_index, u2_index, ftype, neuron_index, model_class, loss, l2=0.5):
-        super(PolynomNeuron, self).__init__(layer_index, u1_index, u2_index, neuron_index, l2=l2)
+    def __init__(self, layer_index, u1_index, u2_index, ftype, neuron_index, model_class, loss, l2=0.5, l2_bis=(0.01, 0.1, 1.0)):
+        super(PolynomNeuron, self).__init__(layer_index, u1_index, u2_index, neuron_index, l2=l2, l2_bis=l2_bis)
         self.ftype = ftype
         self.fw_size = 0
         self.set_type(ftype)
@@ -346,7 +347,11 @@ class PolynomNeuron(Neuron):
     def _fit_regressor(self, x, y, params):
         a = self.get_polynom_inputs(self.ftype, self.u1_index, self.u2_index, x)
         reg = linear_model.Ridge(alpha=params['l2'], solver='lsqr')
-        self.l2 = params['l2']
+        # reg = linear_model.RidgeCV(alphas=params['l2_bis'])
+        # https://chrisalbon.com/machine_learning/linear_regression/selecting_best_alpha_value_in_ridge_regression/
+        
+        
+        
         # reg = linear_model.
         #update self.l2
 
@@ -356,7 +361,11 @@ class PolynomNeuron(Neuron):
         w = np.empty((len(reg.coef_) + 1,), dtype=np.double)
         w[0] = reg.intercept_
         w[1:] = reg.coef_
+        
+        self.l2 = params['l2']
+        # self.l2 = reg.alpha_
         return w
+
 
     def _fit_classifier(self, x, y, params):
         a = self.get_polynom_inputs(self.ftype, self.u1_index, self.u2_index, x)
