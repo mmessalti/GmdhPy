@@ -350,10 +350,6 @@ class PolynomNeuron(Neuron):
         # reg = linear_model.RidgeCV(alphas=params['l2_bis'])
         # https://chrisalbon.com/machine_learning/linear_regression/selecting_best_alpha_value_in_ridge_regression/
         
-        
-        
-        # reg = linear_model.
-        #update self.l2
 
 
         a2 = a[:, 1:]
