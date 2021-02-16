@@ -764,7 +764,7 @@ class BaseSONN(object):
         """
         return self._get_features_names_by_index(self.get_selected_features_indices())
 
-    def describe(self, model_name='Model'):
+    def describe(self, model_name='Model Test'):
         """Describe the model"""
         s = ['*' * 50,
              'Model : '+model_name,
