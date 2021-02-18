@@ -346,12 +346,10 @@ class PolynomNeuron(Neuron):
 
     def _fit_regressor(self, x, y, params):
         a = self.get_polynom_inputs(self.ftype, self.u1_index, self.u2_index, x)
-        # reg = linear_model.Ridge(alpha=params['l2'], solver='lsqr')
-        reg = linear_model.RidgeCV(alphas=params['l2_bis'])
-        # https://chrisalbon.com/machine_learning/linear_regression/selecting_best_alpha_value_in_ridge_regression/
         
-
-
+        """
+        # reg = linear_model.Ridge(alpha=params['l2'], solver='lsqr')
+        
         a2 = a[:, 1:]
         reg.fit(a2, y)
         w = np.empty((len(reg.coef_) + 1,), dtype=np.double)
@@ -359,7 +357,19 @@ class PolynomNeuron(Neuron):
         w[1:] = reg.coef_
         
         # self.l2 = params['l2']
-        self.l2 = reg.alpha_
+        """
+        
+        reg = linear_model.RidgeCV(alphas=params['l2_bis'])
+        # https://chrisalbon.com/machine_learning/linear_regression/selecting_best_alpha_value_in_ridge_regression/
+        a2 = a[:, 1:]
+        model_cv = reg.fit(a2, y)
+        w = np.empty((len(model_cv.coef_) + 1,), dtype=np.double)
+        w[0] = model_cv.intercept_
+        w[1:] = model_cv.coef_
+        
+        
+        self.l2 = model_cv.alpha_
+        
         return w
 
 
