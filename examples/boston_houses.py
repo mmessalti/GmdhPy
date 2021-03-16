@@ -50,5 +50,9 @@ if __name__ == '__main__':
 
     print("Selected features: {}".format(model.get_selected_features()))
     print("Unselected features: {}".format(model.get_unselected_features()))
+    print()
+    print()
+    print()
+    print(model.describe())
 
     PlotModel(model, filename='boston_house_model', plot_neuron_name=True, view=True).plot()
