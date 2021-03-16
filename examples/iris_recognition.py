@@ -35,7 +35,7 @@ if __name__ == '__main__':
 
     iris = datasets.load_iris()
 
-    viris_class = np.vectorize(iris_class, otypes=[np.int])
+    viris_class = np.vectorize(iris_class, otypes=[np.int64])
 
     n_samples = iris.data.shape[0]
 

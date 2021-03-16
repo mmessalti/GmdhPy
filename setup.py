@@ -10,7 +10,7 @@ setup(name='GmdhPy',
       url='https://github.com/mmessalti/GmdhPy',
       download_url='https://github.com/mmessalti/GmdhPy/archive/master.zip',
       license='MIT',
-      install_requires=['numpy', 'six', 'scikit-learn', 'pandas'],
+      install_requires=['numpy', 'six', 'scikit-learn', 'pandas', 'graphviz', 'matplotlib'],
       extras_require={
           'graphviz': ['graphviz', 'matplotlib'],
       },
