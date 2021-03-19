@@ -24,7 +24,7 @@ def plot_th_scatter(x_plot,y_plot,x_scatter, y_scatter, title='' ):
     # show the plot
     plt.show()
 
-def plot_th_scatter_train(x_plot,y_plot,x_scatter, y_scatter, title='' ): 
+def plot_th_scatter_black_blue_green(x_plot,y_plot,x_scatter, y_scatter, title='' ): 
     # setting the axes at the centre
     fig = plt.figure()
     ax = fig.add_subplot(1, 1, 1)

@@ -67,30 +67,60 @@ linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=fi
 		"layer 3
 neuron 1
 linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+		"layer 3
+neuron 2
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
 	}
 	{
 		"layer 4
 neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+		"layer 4
+neuron 1
 linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
 	}
 	{
 		"layer 5
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+		"layer 5
+neuron 1
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+		"layer 5
+neuron 2
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+		"layer 5
+neuron 3
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
 	}
 	{
 		"layer 6
 neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+		"layer 6
+neuron 1
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+		"layer 6
+neuron 2
 linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
 	}
 	{
 		"layer 7
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+		"layer 7
+neuron 1
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+		"layer 7
+neuron 2
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
 	}
 	{
 		"layer 8
 neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+		"layer 8
+neuron 1
 linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
 	}
 	{
@@ -112,16 +142,10 @@ linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=fi
 		"layer 12
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
-		"layer 12
-neuron 1
-linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
 	}
 	{
 		"layer 13
 neuron 0
-linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
-		"layer 13
-neuron 1
 linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
 	}
 	{
@@ -132,6 +156,9 @@ linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=fi
 	{
 		"layer 15
 neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+		"layer 15
+neuron 1
 linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
 	}
 	{
@@ -146,6 +173,136 @@ linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=fi
 	}
 	{
 		"layer 18
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 19
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 20
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 21
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 22
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 23
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 24
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 25
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 26
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 27
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 28
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 29
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 30
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 31
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 32
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 33
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 34
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 35
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 36
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 37
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 38
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 39
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 40
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 41
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 42
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 43
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
+	}
+	{
+		"layer 44
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#cde8ef" fontsize=10 shape=rect style=filled]
 	}
@@ -165,20 +322,20 @@ linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
 LSTAT" -> "layer 0
 neuron 1
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
-	"F3
-CHAS" -> "layer 0
-neuron 2
-linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
-	"F12
-LSTAT" -> "layer 0
-neuron 2
-linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
 	"F5
 RM" -> "layer 0
-neuron 3
+neuron 2
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
 	"F9
 TAX" -> "layer 0
+neuron 2
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F4
+NOX" -> "layer 0
+neuron 3
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F12
+LSTAT" -> "layer 0
 neuron 3
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
 	"layer 0
@@ -224,32 +381,50 @@ neuron 0
 linear cov" -> "layer 3
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
-	"layer 2
-neuron 1
-linear cov" -> "layer 3
+	"F7
+DIS" -> "layer 3
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
 	"layer 2
 neuron 0
 linear cov" -> "layer 3
+neuron 1
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 2
+neuron 1
+linear cov" -> "layer 3
+neuron 1
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 2
+neuron 1
+linear cov" -> "layer 3
+neuron 2
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F10
+PTRATIO" -> "layer 3
+neuron 2
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 3
+neuron 0
+linear cov" -> "layer 4
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 3
+neuron 2
+linear cov" -> "layer 4
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 3
+neuron 1
+linear cov" -> "layer 4
 neuron 1
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
 	"F7
-DIS" -> "layer 3
+DIS" -> "layer 4
 neuron 1
-linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
-	"layer 3
-neuron 0
-linear cov" -> "layer 4
-neuron 0
-linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
-	"layer 3
-neuron 1
-linear cov" -> "layer 4
-neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
 	"layer 4
-neuron 0
+neuron 1
 linear cov" -> "layer 5
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
@@ -257,40 +432,115 @@ linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
 CRIM" -> "layer 5
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
-	"layer 5
+	"layer 4
+neuron 1
+linear cov" -> "layer 5
+neuron 1
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F4
+NOX" -> "layer 5
+neuron 1
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 4
+neuron 1
+linear cov" -> "layer 5
+neuron 2
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F10
+PTRATIO" -> "layer 5
+neuron 2
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 4
 neuron 0
+linear cov" -> "layer 5
+neuron 3
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F0
+CRIM" -> "layer 5
+neuron 3
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 5
+neuron 3
 linear cov" -> "layer 6
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
-	"F7
-DIS" -> "layer 6
+	"F8
+RAD" -> "layer 6
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 5
+neuron 0
+linear cov" -> "layer 6
+neuron 1
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 5
+neuron 2
+linear cov" -> "layer 6
+neuron 1
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 5
+neuron 1
+linear cov" -> "layer 6
+neuron 2
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F0
+CRIM" -> "layer 6
+neuron 2
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 6
+neuron 2
+linear cov" -> "layer 7
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F8
+RAD" -> "layer 7
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
 	"layer 6
 neuron 0
 linear cov" -> "layer 7
+neuron 1
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F3
+CHAS" -> "layer 7
+neuron 1
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 6
+neuron 1
+linear cov" -> "layer 7
+neuron 2
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F8
+RAD" -> "layer 7
+neuron 2
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 7
+neuron 1
+linear cov" -> "layer 8
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
-	"F4
-NOX" -> "layer 7
+	"layer 7
+neuron 2
+linear cov" -> "layer 8
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
 	"layer 7
 neuron 0
 linear cov" -> "layer 8
-neuron 0
+neuron 1
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
-	"F12
-LSTAT" -> "layer 8
-neuron 0
+	"F8
+RAD" -> "layer 8
+neuron 1
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
 	"layer 8
 neuron 0
 linear cov" -> "layer 9
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
-	"F8
-RAD" -> "layer 9
+	"layer 8
+neuron 1
+linear cov" -> "layer 9
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
 	"layer 9
@@ -298,8 +548,8 @@ neuron 0
 linear cov" -> "layer 10
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
-	"F1
-ZN" -> "layer 10
+	"F4
+NOX" -> "layer 10
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
 	"layer 10
@@ -320,41 +570,22 @@ linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
 LSTAT" -> "layer 12
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
-	"layer 11
+	"layer 12
 neuron 0
-linear cov" -> "layer 12
-neuron 1
+linear cov" -> "layer 13
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F9
+TAX" -> "layer 13
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 13
+neuron 0
+linear cov" -> "layer 14
+neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
 	"F8
-RAD" -> "layer 12
-neuron 1
-linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
-	"layer 12
-neuron 0
-linear cov" -> "layer 13
-neuron 0
-linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
-	"F4
-NOX" -> "layer 13
-neuron 0
-linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
-	"layer 12
-neuron 1
-linear cov" -> "layer 13
-neuron 1
-linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
-	"F4
-NOX" -> "layer 13
-neuron 1
-linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
-	"layer 13
-neuron 0
-linear cov" -> "layer 14
-neuron 0
-linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
-	"layer 13
-neuron 1
-linear cov" -> "layer 14
+RAD" -> "layer 14
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
 	"layer 14
@@ -366,13 +597,23 @@ linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
 LSTAT" -> "layer 15
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 14
+neuron 0
+linear cov" -> "layer 15
+neuron 1
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F4
+NOX" -> "layer 15
+neuron 1
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
 	"layer 15
 neuron 0
 linear cov" -> "layer 16
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
-	"F12
-LSTAT" -> "layer 16
+	"layer 15
+neuron 1
+linear cov" -> "layer 16
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
 	"layer 16
@@ -380,8 +621,8 @@ neuron 0
 linear cov" -> "layer 17
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
-	"F4
-NOX" -> "layer 17
+	"F6
+AGE" -> "layer 17
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
 	"layer 17
@@ -389,11 +630,245 @@ neuron 0
 linear cov" -> "layer 18
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
-	"F0
-CRIM" -> "layer 18
+	"F4
+NOX" -> "layer 18
 neuron 0
 linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
 	"layer 18
+neuron 0
+linear cov" -> "layer 19
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F1
+ZN" -> "layer 19
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 19
+neuron 0
+linear cov" -> "layer 20
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F8
+RAD" -> "layer 20
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 20
+neuron 0
+linear cov" -> "layer 21
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F12
+LSTAT" -> "layer 21
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 21
+neuron 0
+linear cov" -> "layer 22
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F4
+NOX" -> "layer 22
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 22
+neuron 0
+linear cov" -> "layer 23
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F4
+NOX" -> "layer 23
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 23
+neuron 0
+linear cov" -> "layer 24
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F1
+ZN" -> "layer 24
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 24
+neuron 0
+linear cov" -> "layer 25
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F12
+LSTAT" -> "layer 25
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 25
+neuron 0
+linear cov" -> "layer 26
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F4
+NOX" -> "layer 26
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 26
+neuron 0
+linear cov" -> "layer 27
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F1
+ZN" -> "layer 27
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 27
+neuron 0
+linear cov" -> "layer 28
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F4
+NOX" -> "layer 28
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 28
+neuron 0
+linear cov" -> "layer 29
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F1
+ZN" -> "layer 29
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 29
+neuron 0
+linear cov" -> "layer 30
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F4
+NOX" -> "layer 30
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 30
+neuron 0
+linear cov" -> "layer 31
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F1
+ZN" -> "layer 31
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 31
+neuron 0
+linear cov" -> "layer 32
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F4
+NOX" -> "layer 32
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 32
+neuron 0
+linear cov" -> "layer 33
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F1
+ZN" -> "layer 33
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 33
+neuron 0
+linear cov" -> "layer 34
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F4
+NOX" -> "layer 34
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 34
+neuron 0
+linear cov" -> "layer 35
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F1
+ZN" -> "layer 35
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 35
+neuron 0
+linear cov" -> "layer 36
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F4
+NOX" -> "layer 36
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 36
+neuron 0
+linear cov" -> "layer 37
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F1
+ZN" -> "layer 37
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 37
+neuron 0
+linear cov" -> "layer 38
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F1
+ZN" -> "layer 38
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 38
+neuron 0
+linear cov" -> "layer 39
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F4
+NOX" -> "layer 39
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 39
+neuron 0
+linear cov" -> "layer 40
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F1
+ZN" -> "layer 40
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 40
+neuron 0
+linear cov" -> "layer 41
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F4
+NOX" -> "layer 41
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 41
+neuron 0
+linear cov" -> "layer 42
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F1
+ZN" -> "layer 42
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 42
+neuron 0
+linear cov" -> "layer 43
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F1
+ZN" -> "layer 43
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 43
+neuron 0
+linear cov" -> "layer 44
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"F4
+NOX" -> "layer 44
+neuron 0
+linear cov" [color="#cde8ef" fillcolor="#3499cd" weight=1]
+	"layer 44
 neuron 0
 linear cov" -> OUTPUT [color="#cde8ef" fillcolor="#3499cd" weight=1]
 }
