@@ -93,7 +93,7 @@ if __name__ == '__main__':
 
     # Models
 
-    model_y1 = Regressor(ref_functions=('linear_cov',),
+    model_y1 = Regressor( ref_functions=('linear_cov',),
                     normalize=True,
                     criterion_minimum_width=5,
                     stop_train_epsilon_condition=0.0001,
